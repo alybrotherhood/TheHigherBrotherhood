@@ -1,9 +1,8 @@
 import React from 'react'
 
 const Testimonials = () => (
-    <div className='px-52 py-14 flex flex-col justify-center items-center' id='testimonials'>
+    <div className='flex flex-col justify-center items-center px-10 sm:px-40 xl:px-64 py-20 xl:py-10 mb-32' id='testimonials'>
         <div className='text-center'>
-            {/* <h2 className='text-5xl font-bold mb-20'>Add <span className='text-secondaryColor'>Your Success Story</span> To The Board</h2> */}
             <h2 className='text-5xl font-bold leading-normal'>Don't Waste This <span className='text-secondaryColor'>Opportunity</span></h2>
             <h3 className='text-3xl font-bold'><span className='text-secondaryColor'>Join</span> Other People's Success Stories</h3>
 
@@ -11,7 +10,7 @@ const Testimonials = () => (
 
             <button className='bg-secondaryColor px-6 py-3 rounded-full text-mainColor text-2xl font-bold uppercase mb-20'>Get Rich Now</button>
         </div>
-        <div className='w-[1200px] columns-2 gap-5 space-y-5'>
+        <div className='w-[400px] lg:w-full columns-1 lg:columns-2 gap-5 space-y-5' style={{ maxWidth: "1200px" }}>
             <img src="/src/assets/Testimonials/testimonial-1.png" />
             <img src="/src/assets/Testimonials/testimonial-2.png" />
             <img src="/src/assets/Testimonials/testimonial-3.png" />
