@@ -31,7 +31,7 @@ const FAQ = () => {
     };
 
     return (
-        <div className='flex flex-col justify-center items-center px-10 sm:px-40 xl:px-64 py-20 xl:py-10 mb-32' id='faq'>
+        <div className='flex flex-col justify-center items-center px-10 sm:px-40 xl:px-64 py-20 mb-24' id='faq'>
             <h2 className='text-5xl font-bold mb-16'>Frequently Asked Questions</h2>
 
             <Fragment>

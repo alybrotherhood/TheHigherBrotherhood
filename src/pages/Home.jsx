@@ -1,15 +1,17 @@
 import React from 'react'
 
-import { Hero, Navbar, About, Features, Testimonials, FAQ, Footer } from '../components'
+import { Navbar, Hero, LimitedTime, About, Features, Testimonials, FAQ, Footer, Pricing } from '../components'
 
 const Home = () => {
   return (
-    <div className='font-montserrat bg-mainColor text-white'>
+    <div>
       <Navbar />
       <Hero />
+      {/* <LimitedTime /> */}
       <About />
       <Features />
       <Testimonials />
+      <Pricing />
       <FAQ />
       <Footer />
     </div>

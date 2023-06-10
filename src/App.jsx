@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import { Home, Login } from './pages'
 
 const App = () => (
-  <div className="App">
+  <div className="font-montserrat bg-mainColor text-white">
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/login' element={<Login />} />

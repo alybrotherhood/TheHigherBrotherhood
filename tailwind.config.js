@@ -12,6 +12,7 @@ module.exports = withMT({
     extend: {
       colors: {
         mainColor: "#171714",
+        mainColorLight: "#181816",
         secondaryColor: "#f8d378",
       },
       fontFamily: {
