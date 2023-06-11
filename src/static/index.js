@@ -11,13 +11,24 @@ import review2 from '../assets/testimonials/review-2.png';
 import review3 from '../assets/testimonials/review-3.png';
 
 
+
+
+
 export const heroSection = {
-    description: "Description"
+    description: "INSERT DESCRIPTION HERE"
 }
 
 export const aboutSection = {
-    description: "Description"
+    description: "INSERT DESCRIPTION HERE"
 }
+
+export const testimonialsSection = {
+    description: "INSERT DESCRIPTION HERE"
+}
+
+
+
+
 
 export const features = [
     {
@@ -63,10 +74,6 @@ export const features = [
         icon: "📜"
     },
 ];
-
-export const testimonialsSection = {
-    description: "Description"
-}
 
 export const testimonialImages = [
     {
