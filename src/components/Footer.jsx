@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <div className='flex flex-col lg:flex-row justify-between items-center gap-5 px-10 sm:px-40 xl:px-64 py-20 xl:py-10'>
-            <p>&copy; 2023 www.thehigherbrothers.net - All Rights Reserved.</p>
+            <p>&copy; 2023 www.thehigherbrotherhood.net - All Rights Reserved.</p>
             <div className='flex gap-3'>
                 <a href="https://www.youtube.com/@alybrotherhood" target="_blank">
                     <svg className='w-10' height="100%" fillRule='evenodd' clipRule="evenodd" strokeLinejoin='round' strokeMiterlimit="2" viewBox="0 0 512 512" width="100%" xmlns="http://www.w3.org/2000/svg">
