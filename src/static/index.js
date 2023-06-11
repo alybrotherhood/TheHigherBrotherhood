@@ -43,7 +43,7 @@ export const features = [
     {
         id: 6,
         title: "Full Course Access",
-        description: "Gain access to all future courses I make for free. Current courses being worked on: Youtube Course, Bodybuilding Course.",
+        description: "Gain access to all future courses I make for free. Current courses being worked on: Youtube Course, Bodybuilding Course.1",
         icon: "📖"
     },
     {
