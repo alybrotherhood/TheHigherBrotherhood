@@ -14,9 +14,8 @@ const Hero = () => (
             <div className='my-6 mb-10'>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, dolore. Enim, sit aliquam? At ullam aliquid maiores veritatis debitis soluta!</p>
             </div>
-            <Timer />
             <div className='mt-14'>
-                <button className='bg-secondaryColor px-6 py-3 rounded-full text-mainColor text-2xl font-bold uppercase'>Join Now</button>
+            <a className='bg-secondaryColor px-6 py-4 rounded-full text-mainColor text-2xl font-bold uppercase mb-14' href='https://whop.com/checkout/plan_6HODDDQEqJAAu' target="_blank">Join Now</a>
             </div>
         </div>
         <div className='flex-1 flex justify-center items-center w-screen' style={{ maxWidth: "400px" }}>
