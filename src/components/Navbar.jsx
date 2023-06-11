@@ -2,11 +2,11 @@ import React, { useState, useRef } from 'react'
 
 const NavLinks = () => (
   <ul className='absolute left-0 top-full w-full lg:static flex flex-col lg:flex-row gap-12 bg-mainColor text-2xl text-white text-center uppercase font-medium py-10 lg-py-0'>
-    <li><a className='bg-secondaryColor px-6 py-4 rounded-full text-mainColor text-2xl font-bold uppercase mb-14' href='https://whop.com/checkout/plan_6HODDDQEqJAAu' target="_blank">Join Now</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#features">Features</a></li>
     <li><a href="#testimonials">Testimonials</a></li>
     <li><a href="#faq">FAQ</a></li>
+    <li><a className='bg-secondaryColor px-6 py-4 rounded-full text-mainColor text-2xl font-bold uppercase mb-14' href='https://whop.com/checkout/plan_6HODDDQEqJAAu' target="_blank">Join Now</a></li>
     {/* <li><a href="/login" className='lg:bg-secondaryColor px-6 py-3 rounded-full text-secondaryColor lg:text-mainColor font-bold'>Login</a></li> */}
   </ul>
 );

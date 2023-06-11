@@ -10,6 +10,15 @@ import review1 from '../assets/testimonials/review-1.png';
 import review2 from '../assets/testimonials/review-2.png';
 import review3 from '../assets/testimonials/review-3.png';
 
+
+export const heroSection = {
+    description: "Description"
+}
+
+export const aboutSection = {
+    description: "Description"
+}
+
 export const features = [
     {
         id: 1,
@@ -55,7 +64,11 @@ export const features = [
     },
 ];
 
-export const testimonials = [
+export const testimonialsSection = {
+    description: "Description"
+}
+
+export const testimonialImages = [
     {
         id: 1,
         image: testimonial1

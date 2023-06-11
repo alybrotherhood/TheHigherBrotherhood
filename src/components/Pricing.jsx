@@ -9,7 +9,7 @@ const Pricing = () => {
             <div className='p-10 rounded-lg text-center' style={{ maxWidth: "500px" }}>
                 <h3 className='text-4xl font-bold'>Get Full Access</h3>
                 <p className='my-5 text-xl font-medium'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit corrupti odit molestiae sit, est perferendis.</p>
-                <div className='my-12'>
+                <div className='mt-12 mb-16'>
                     <a className='bg-secondaryColor px-6 py-4 rounded-full text-mainColor text-2xl font-bold uppercase' href='https://whop.com/checkout/plan_6HODDDQEqJAAu' target="_blank">$97 Entry Fee</a>
                 </div>
                 <div className='flex flex-col gap-3 mt-5 font-medium'>
