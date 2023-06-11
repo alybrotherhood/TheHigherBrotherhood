@@ -1,10 +1,12 @@
-import React from 'react'
-import { fascinations } from '../static'
+import React from 'react';
+import { fascinations } from '../static';
+
+import logo from '../assets/logo/logo.png';
 
 const Pricing = () => {
     return (
         <div className='flex flex-col-reverse xl:flex-row gap-10 justify-center items-center px-10 sm:px-40 xl:px-64 py-20 mb-32'>
-            <div className='flex-1 bg-mainColorLight shadow-lg bg- p-10 rounded-lg text-center' style={{ maxWidth: "500px" }}>
+            <div className='p-10 rounded-lg text-center' style={{ maxWidth: "500px" }}>
                 <h3 className='text-4xl font-bold'>Get Full Access</h3>
                 <p className='my-5 text-xl font-medium'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit corrupti odit molestiae sit, est perferendis.</p>
                 <button className='bg-secondaryColor px-6 py-3 rounded-full text-mainColor text-2xl font-bold uppercase mt-3 mb-7'>$97 Entry Fee</button>
@@ -21,9 +23,9 @@ const Pricing = () => {
                     }
                 </div>
             </div>
-            <div className='flex-1 flex flex-col justify-center items-center w-screen'>
-                <img src="/src/assets/Logo/logo.png" className='bg-mainColorLight shadow-lg w-full' style={{ maxWidth: "500px" }} />
-                <div className='p-10 text-center xl:text-start'>
+            <div className='flex flex-col justify-center items-center' style={{ maxWidth: "500px" }}>
+                <img src={ logo } className='bg-mainColorLight w-full' />
+                <div className='p-0 xl:p-10 text-center xl:text-start'>
                     <p className='text-xl font-medium mt-5'>Join other <span className='text-secondaryColor'>successful</span> people, from entrepreneurs to <span className='text-secondaryColor'>14-15 year</span> olds, making <span className='text-secondaryColor'>$1000+</span></p>
                     <p className="text-xl font-medium mt-5">You will make all your money back, and even make <span className='text-secondaryColor'>huge amounts</span> of <span className='text-secondaryColor'>profit</span> in a short period of time.</p>
                 </div>

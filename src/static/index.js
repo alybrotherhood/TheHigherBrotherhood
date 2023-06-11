@@ -1,3 +1,14 @@
+import testimonial1 from '../assets/testimonials/testimonial-1.png';
+import testimonial2 from '../assets/testimonials/testimonial-2.png';
+import testimonial3 from '../assets/testimonials/testimonial-3.png';
+import testimonial4 from '../assets/testimonials/testimonial-4.png';
+import testimonial5 from '../assets/testimonials/testimonial-5.png';
+import testimonial6 from '../assets/testimonials/testimonial-6.png';
+import testimonial7 from '../assets/testimonials/testimonial-7.png';
+import testimonial8 from '../assets/testimonials/testimonial-8.png';
+import review1 from '../assets/testimonials/review-1.png';
+import review2 from '../assets/testimonials/review-2.png';
+
 export const features = [
     {
         id: 1,
@@ -46,44 +57,44 @@ export const features = [
 export const testimonials = [
     {
         id: 1,
-        filename: "testimonial-1.png"
+        image: testimonial1
     },
     {
         id: 2,
-        filename: "testimonial-2.png"
+        image: testimonial2
     },
     {
         id: 3,
-        filename: "testimonial-3.png"
+        image: testimonial3
     },
     {
         id: 4,
-        filename: "testimonial-4.png"
+        image: testimonial4
     },
     {
         id: 5,
-        filename: "testimonial-5.png"
+        image: testimonial5
     },
     {
         id: 6,
-        filename: "testimonial-6.png"
+        image: testimonial6
     },
     {
         id: 7,
-        filename: "testimonial-7.png"
+        image: testimonial7
     },
     {
         id: 8,
-        filename: "testimonial-8.png"
+        image: testimonial8
     },
     {
         id: 9,
-        filename: "review-1.png"
+        image: review1
     },
     {
         id: 10,
-        filename: "review-2.png"
-    }
+        image: review2
+    },
 ];
 
 export const fascinations = [

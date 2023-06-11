@@ -2,6 +2,8 @@ import React from 'react'
 
 import Timer from './Timer';
 
+import iconRounded from '../assets/logo/icon-rounded.png';
+
 const Hero = () => (
     <div className='flex flex-col lg:flex-row gap-10 justify-center items-center px-10 sm:px-40 xl:px-64 py-20 mb-32'>
         <div className='flex-1 text-center lg:text-start' style={{ maxWidth: "650px" }}>
@@ -18,7 +20,7 @@ const Hero = () => (
             </div>
         </div>
         <div className='flex-1 flex justify-center items-center w-screen' style={{ maxWidth: "400px" }}>
-            <img src="/src/assets/Logo/icon-rounded.png" />
+            <img src={ iconRounded } />
         </div>
     </div>
 );

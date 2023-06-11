@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useState } from 'react';
 import { FAQs } from '../static';
 
 import {
@@ -38,10 +38,10 @@ const FAQ = () => {
                 {
                     FAQs.map(FAQ => (
                         <Accordion open={open === FAQ.id} icon={<Icon id={FAQ.id} open={open} />} key={ FAQ.id }>
-                            <AccordionHeader className="text-white $ hover:text-white" onClick={() => handleOpen(FAQ.id)}>
+                            <AccordionHeader className="text-white hover:text-white" onClick={() => handleOpen(FAQ.id)}>
                                 { FAQ.question }
                             </AccordionHeader>
-                            <AccordionBody className="text-white text-lg font-medium">
+                            <AccordionBody className="text-white text-base font-medium">
                                 { FAQ.answer }
                             </AccordionBody>
                         </Accordion>
