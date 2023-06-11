@@ -8,6 +8,7 @@ import testimonial7 from '../assets/testimonials/testimonial-7.png';
 import testimonial8 from '../assets/testimonials/testimonial-8.png';
 import review1 from '../assets/testimonials/review-1.png';
 import review2 from '../assets/testimonials/review-2.png';
+import review3 from '../assets/testimonials/review-3.png';
 
 export const features = [
     {
@@ -94,6 +95,10 @@ export const testimonials = [
     {
         id: 10,
         image: review2
+    },
+    {
+        id: 11,
+        image: review3
     },
 ];
 

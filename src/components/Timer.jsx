@@ -5,10 +5,10 @@ const Timer = () => {
 
     return (
         <div className='flex items-center sm:justify-center xl:justify-start gap-2 sm:gap-5'>
-            <p className='text-3xl text-center p-5 border-2 border-gray-800 rounded w-20'> { days.toString().padStart(2, '0') }</p><span className='text-xl'>:</span>
-            <p className='text-3xl text-center p-5 border-2 border-gray-800 rounded w-20'> { hours.toString().padStart(2, '0') }</p><span className='text-xl'>:</span>
-            <p className='text-3xl text-center p-5 border-2 border-gray-800 rounded w-20'> { minutes.toString().padStart(2, '0') }</p><span className='text-xl'>:</span>
-            <p className='text-3xl text-center p-5 border-2 border-gray-800 rounded w-20'> { seconds.toString().padStart(2, '0') }</p>
+            <p className='text-5xl font-medium text-center p-5 border-4 border-gray-800 rounded w-28'> { days.toString().padStart(2, '0') }</p><span className='text-xl'>:</span>
+            <p className='text-5xl font-medium text-center p-5 border-4 border-gray-800 rounded w-28'> { hours.toString().padStart(2, '0') }</p><span className='text-xl'>:</span>
+            <p className='text-5xl font-medium text-center p-5 border-4 border-gray-800 rounded w-28'> { minutes.toString().padStart(2, '0') }</p><span className='text-xl'>:</span>
+            <p className='text-5xl font-medium text-center p-5 border-4 border-gray-800 rounded w-28'> { seconds.toString().padStart(2, '0') }</p>
         </div>
     )
 }

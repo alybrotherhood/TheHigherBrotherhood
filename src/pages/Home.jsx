@@ -7,7 +7,7 @@ const Home = () => {
     <div>
       <Navbar />
       <Hero />
-      {/* <LimitedTime /> */}
+      <LimitedTime />
       <About />
       <Features />
       <Testimonials />
