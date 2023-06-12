@@ -1,5 +1,7 @@
 # TheHigherBrotherhood
 
+Edit the descriptions in each section in /src/static/index.js
+
 ## How To Install Project Locally
 
 ### Clone the repository
