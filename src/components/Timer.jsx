@@ -1,11 +1,16 @@
 import useTimer from '../hooks/useTimer';
 
-const today = new Date();
-const tomorrow = new Date(today);
-tomorrow.setDate(tomorrow.getDate() + 1);
+const getDateTomorrow = () => {
+    const currentDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+    const day = currentDate.getDate();
+    const month = currentDate.getMonth() + 1;
+    const year = currentDate.getFullYear();
+
+    return `${month}, ${day}, ${year}`;
+}
 
 const Timer = () => {
-    const { days, hours, minutes, seconds } = useTimer(tomorrow);
+    const { days, hours, minutes, seconds } = useTimer(getDateTomorrow());
     
     return (
         <div className='flex items-center sm:justify-center xl:justify-start gap-2 sm:gap-5'>

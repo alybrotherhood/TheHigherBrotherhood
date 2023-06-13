@@ -26,8 +26,8 @@ export default function useTimer(deadline, interval = SECOND) {
 
     return {
         days: Math.floor(timespan / DAY),
-        hours: Math.floor((timespan / HOUR) % 24) - 15,
-        minutes: Math.floor((timespan / MINUTE) % 60) - 38,
-        seconds: Math.floor((timespan / SECOND) % 60) - 32
+        hours: Math.floor((timespan / HOUR) % 24),
+        minutes: Math.floor((timespan / MINUTE) % 60),
+        seconds: Math.floor((timespan / SECOND) % 60)
     };
 }
