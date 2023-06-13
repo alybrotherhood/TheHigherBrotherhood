@@ -6,10 +6,10 @@ import {
     Card,
 } from "@material-tailwind/react";
 
-import { testimonialsSection, testimonialImages } from '../static';
 import ScrollAnimation from '../modules/ScrollAnimation';
+import emphasizeWord from '../modules/emphasizeWord';
 
-const Testimonials = () => {
+const Testimonials = ({ slice }) => {
     const [open, setOpen] = useState(false);
     const [currentImage, setCurrentImage] = useState(null);
 
@@ -32,20 +32,20 @@ const Testimonials = () => {
     return (
         <div className='flex flex-col justify-center items-center px-10 sm:px-40 xl:px-64 py-20 mb-24' id='testimonials'>
             <div className='text-center mb-20'>
-                <h2 className='text-5xl font-bold leading-normal'>Don't Waste This <span className='text-secondaryColor'>Opportunity</span></h2>
-                <h3 className='text-3xl font-bold'><span className='text-secondaryColor'>Join</span> Other People's Success Stories</h3>
+                <h2 className='text-5xl font-bold leading-normal'>{emphasizeWord(slice.primary.header[0])}</h2>
+                <h3 className='text-3xl font-bold'>{emphasizeWord(slice.primary.sub_header[0])}</h3>
 
-                <p className='mt-10 mb-16'>{ testimonialsSection.description }</p>
+                <p className='text-lg font-medium mt-10 mb-16'>{emphasizeWord(slice.primary.description[0])}</p>
 
-                <a className='bg-secondaryColor px-6 py-4 rounded-full text-mainColor text-2xl font-bold uppercase' href='https://whop.com/checkout/plan_6HODDDQEqJAAu' target="_blank">Get Rich Now</a>
+                <a className='bg-secondaryColor px-6 py-4 rounded-full text-mainColor text-2xl font-bold uppercase' href={slice.primary.cta_link.url} target={slice.primary.cta_text[0].text}>{slice.primary.cta_text[0].text}</a>
             </div>
             <div className='w-[400px] lg:w-full columns-1 lg:columns-2 gap-5 space-y-5' style={{ maxWidth: "1200px" }}>
                 {
-                    testimonialImages.map(testimonial => (
-                        <Card className="cursor-pointer overflow-hidden opacity-0 duration-500" data-class-in="opacity-100" onClick={() => handleOpen(testimonial.image)} key={testimonial.id} >
+                    slice.items.map(({ testimonial }, index) => (
+                        <Card className="cursor-pointer overflow-hidden opacity-0 duration-500" data-class-in="opacity-100" onClick={() => handleOpen(testimonial.url)} key={`Testimonial-${index}`} >
                             <img
                                 className="h-full w-full object-cover object-center"
-                                src={testimonial.image}
+                                src={testimonial.url}
                             />
                         </Card>
                     ))

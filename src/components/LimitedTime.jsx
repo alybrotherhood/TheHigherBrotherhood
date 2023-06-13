@@ -1,19 +1,17 @@
-import React from 'react'
+import Timer from './Timer';
 
-import Timer from './Timer'
+import emphasizeWord from '../modules/emphasizeWord';
 
-const LimitedTime = () => {
-  return (
-    <div className='flex flex-col justify-center items-center px-10 sm:px-40 xl:px-64 py-20 xl:py-10 mb-32'>
-      <h2 className="text-5xl font-bold">Only A <span className='text-secondaryColor'>Few Spots</span> Remaining!</h2>
-      <h2 className='text-6xl font-bold my-16 border-b-4'>19/20 Members</h2>
-      <Timer />
-      <h3 className='text-4xl font-bold mt-12 mb-20'>Join <span className='text-secondaryColor'>NOW</span> Before The Price Is Increased From $97 to $147!</h3>
-      <div>
-        <a className='bg-secondaryColor px-6 py-4 rounded-full text-mainColor text-2xl font-bold uppercase mb-14' href='https://whop.com/checkout/plan_6HODDDQEqJAAu' target="_blank">Join Now</a>
-      </div>
+const LimitedTime = ({ slice }) => (
+  <div className='flex flex-col justify-center items-center text-center px-10 sm:px-40 xl:px-64 py-20 xl:py-10 mb-32'>
+    <h2 className="text-5xl font-bold">{ emphasizeWord(slice.primary.header[0]) }</h2>
+    <h2 className='text-6xl font-bold my-16 border-b-4'>{ emphasizeWord(slice.primary.members[0]) }</h2>
+    <Timer />
+    <h3 className='text-4xl font-bold mt-12 mb-20'>{ emphasizeWord(slice.primary.sub_header[0]) }</h3>
+    <div>
+      <a className='bg-secondaryColor px-6 py-4 rounded-full text-mainColor text-2xl font-bold uppercase mb-14' href={slice.primary.cta_link.url} target={slice.primary.cta_link.target}>{slice.primary.cta_text[0].text}</a>
     </div>
-  )
-}
+  </div>
+);
 
 export default LimitedTime

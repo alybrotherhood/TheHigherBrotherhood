@@ -5,6 +5,7 @@ const NavLinks = () => (
     <li><a href="#about">About</a></li>
     <li><a href="#features">Features</a></li>
     <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#pricing">Pricing</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li><a className='bg-secondaryColor px-6 py-4 rounded-full text-mainColor text-2xl font-bold uppercase mb-14' href='https://whop.com/checkout/plan_6HODDDQEqJAAu' target="_blank">Join Now</a></li>
     {/* <li><a href="/login" className='lg:bg-secondaryColor px-6 py-3 rounded-full text-secondaryColor lg:text-mainColor font-bold'>Login</a></li> */}
